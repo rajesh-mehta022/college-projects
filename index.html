@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>College Projects With Internship Certificate</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="template-color-2 spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="70">
+
+    <div class="main-page-wrapper">
+        <div class="rn-content-wrapper">
+            <div class="rn-header-image-area">
+                <div class="bg_image--9 bg_image h-100">
+                </div> 
+            </div>
+            <div class="container">
+                <div class="rn-content-wrapper">
+                    <div class="container">
+                        <div class="row padding-tb m_dec-top align-items-center d-flex">
+                                    <div class="header-info-content">
+                                        <h4 class="title">Get <u>College Projects</u> at best prices with <u>internship certificate.</u></h4>
+                                        <p>
+                                            Contact now:<br>
+                                            E-Mail : rajesmehta.022@gmail.com<br>
+                                            Telegram : <a href="https://t.me/project_manager08">project_manager08</a>
+                                        </p>
+                            </div>
+                        </div>
+                <div class="row mt--40 tab-content-wrapper">
+                    <div class="col-lg-2">
+                        <div class="d-flex flex-wrap align-content-start h-100 w-100">
+                            <div class="position-sticky content-wrapper sticky-top rbt-sticky-top-adjust-three w-100">
+                                <ul class="nav tab-navigation-button tab-smlg flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link rn-nav active" id="v-pills-wordpress-tab" data-bs-toggle="tab" href="#v-pills-Wordpress" role="tab" aria-selected="true">Projects</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link rn-nav" id="v-pills-python-tabs" data-bs-toggle="tab" href="#v-pills-python" role="tab" aria-selected="true">Contact</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="tab-area">
+                            <div class="d-flex align-items-start">
+                                <div class="tab-content" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade show active" id="v-pills-Wordpress" role="tabpanel" aria-labelledby="v-pills-wordpress-tab">
+                                        <!-- Start Portfolio Area -->
+                                        <div class="rn-portfolio-area" id="portfolio">
+                                            <div class="container">
+                                                <div class="row mt--10 mt_md--10 mt_sm--10 mt-dec-30" id="data-container">
+                                                    <script>
+                                                        const url = 'http://localhost/projectts/api.php';
+                                                    
+                                                    const container = document.getElementById('data-container');
+                                                    fetch(url).then(response => response.json()).then(data => {
+                                                    for (const key in data) {
+                                                    const item = data[key];
+                                                    const html = `
+                                                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--30 mt_md--30 mt_sm--30" >
+                                                    <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#${key}">
+                                                    <div class="inner">
+                                                    <div class="thumbnail">
+                                                    <a href="javascript:void(0)">
+                                                    <img src="${item.image}" alt="${item.name}"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                    <div class="category-info">
+                                                    <div class="category-list">
+                                                    <a href="javascript:void(0)">${item.type}</a></div>
+                                                    </div>
+                                                    <h4 class="title"><a href="javascript:void(0)">${item.name}</a></h4>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+        <div class="modal fade" id="${key}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i data-feather="x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6">
+                            <div class="portfolio-popup-thumbnail">
+                                <div class="image">
+                                    <img class="w-100" src="${item.image}" alt="slide">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="text-content">
+                                <h3>${item.name}</h3>
+                                <p class="mb--30">${item.description}</p> <p> E-Mail : rajesmehta.022@gmail.com</p>
+                            </div>
+                            <!-- End of .text-content -->
+                        </div>
+                    </div>
+                    <!-- End of .row Body-->
+                </div>
+            </div>
+        </div>
+    </div>`;
+                                                                                                        
+                                                    container.innerHTML += html;
+                                                    }
+                                                    // feather.replace();
+                                                    const closeButtonList = document.querySelectorAll('[data-bs-dismiss="modal"]');
+                                                    closeButtonList.forEach(button => {
+                                                    button.addEventListener('click', () => {
+                                                    const modal = document.querySelector(button.dataset.bsTarget);
+                                                    if (modal) {
+                                                        modal.classList.remove('show');
+                                                        modal.setAttribute('aria-hidden', 'true');
+                                                        document.body.classList.remove('modal-open');
+                                                        const backdrop = document.querySelector('.modal-backdrop');
+                                                        if (backdrop) {
+                                                        backdrop.remove();
+                                                        }
+                                                    }
+                                                    });
+                                                });
+                                                    })
+                                                    .catch(error => {
+                                                    console.error('Error:', error);
+                                                    });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End portfolio Area -->
+                                    </div>
+
+
+                                    <div class="tab-pane fade" id="v-pills-python" role="tabpanel" aria-labelledby="v-pills-python-tabs">
+                                        <!-- Start Contact section -->
+                                        <div class="rn-contact-area" id="contacts">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <div class="contact-about-area">
+                                                            <div class="thumbnail">
+                                                                <img src="assets/images/contact/contact1.png" alt="contact-img">
+                                                            </div>
+                                                            <div class="title-area">
+                                                                <h4 class="title">Rajesh Mehta</h4>
+                                                                <!-- <span>Buy me coffee</span> -->
+                                                            </div>
+                                                            <div class="description">
+                                                                <p>Projects available at very reasonable price. More projects available on-demand. Internship certificate included.</p>
+                                                                    <p>Contact for further details and best discount.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-aos-delay="600" class="col-lg-7 contact-input">
+                                                        <div class="contact-form-wrapper ml--0">
+                                                            <div class="introduce">
+                                                                <form class="rwt-dynamic-form row" action="http://freegetfree.000webhostapp.com/portfolio/feedback.php" method="post">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label for="contact-name">Your Name</label>
+                                                                            <input type="text" name="name" class="form-control form-control-lg" required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label for="contact-phone">Phone Number</label>
+                                                                            <input class="form-control" name="phone" type="text" pattern="[6-9]{1}[0-9]{9}" title="Enter 10 digits" required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <label for="contact-email">Email</label>
+                                                                            <input class="form-control form-control-sm" name="email" type="email" required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <label for="subject">subject</label>
+                                                                            <input class="form-control form-control-sm" name="subject" type="text" required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <label for="contact-message">Your Message</label>
+                                                                            <textarea name="message" cols="30" rows="10" required></textarea>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+                                                                        <button name="submit" type="submit" class="rn-btn">
+                                                                            <span>SEND MESSAGE</span>
+                                                                            <i data-feather="arrow-right"></i>
+                                                                        </button>
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Contact section -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer Area -->
+    <div class="rn-footer-area rn-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+                        <p class="description mt--30"><b>More projects available on demand.</b><br>© 2023. All rights reserved by <a target="_blank" href="#">Rajesh Mehta.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+    <!-- Modal Portfolio Body area Start -->
+    
+    <!-- End Modal Portfolio area -->
+
+    <!-- Back to  top Start -->
+    <div class="backto-top">
+        <div>
+            <i data-feather="arrow-up"></i>
+        </div>
+    </div>
+    <!-- Back to top end -->
+
+    
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
